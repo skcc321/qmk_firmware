@@ -1,6 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
 
+#include "ergodox_ez.h"
 #include "../../shared/colors/layers.c"
 #include "../../shared/layouts/setup.c"
 #include "../../shared/keycodes/custom_keycodes.c"
