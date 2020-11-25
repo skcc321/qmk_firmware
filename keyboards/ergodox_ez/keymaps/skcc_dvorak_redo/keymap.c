@@ -1,6 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
 
+#include "ergodox_ez.h"
 #include "../../shared/colors/layers.c"
 #include "../../shared/layouts/setup.c"
 #include "../../shared/keycodes/custom_keycodes.c"
@@ -22,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /*                         k5B,k5A        k53,k52                            */
   /*                     k4C,k59,k58        k54,k55,k41                        */
 
-  [DV] = LAYOUT_REDOX(
+  [DV] = LAYOUT_redox(
 
       _______,      _______,      KC_AMPR,      KC_PERC,    KC_AT,    KC_LBRC,    KC_LPRN,             KC_RPRN,   KC_RBRC,    KC_ASTR,    KC_HASH,    KC_EXLM,    _______,    KC_DEL,
       LALTP,        DQUO_QUOT,    NUMS_COMM,    ARR_DOT,    KC_P,     KC_Y,       KC_LCBR,             KC_RCBR,   KC_F,       KC_G,       KC_C,       KC_R,       KC_L,       RALT_SLSH,
@@ -40,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 
-  [QW] = LAYOUT_REDOX(
+  [QW] = LAYOUT_redox(
       _______,      KC_1,         KC_2,         KC_3,       KC_4,     KC_5,       _______,             _______,   KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       _______,
       KC_BSLS,      KC_Q,         KC_W,         KC_E,       KC_R,     KC_T,       _______,             _______,   KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       KC_LBRACKET,
       KC_RBRC,      KC_A,         KC_S,         KC_D,       KC_F,     KC_G,                                       KC_H,       KC_J,       KC_K,       KC_L,       KC_SCOLON,  KC_QUOTE,
@@ -53,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 
-  [DG] = LAYOUT_REDOX(
+  [DG] = LAYOUT_redox(
       _______,      _______,      _______,      _______,    _______,  _______,    _______,             _______,   _______,    TERM,       LOCK,       _______,    _______,    _______,
       _______,      _______,      _______,      _______,    _______,  _______,    _______,             _______,   _______,    KC_7,       KC_8,       KC_9,       _______,    _______,
       _______,      _______,      _______,      _______,    _______,  _______,                                    _______,    KC_4,       KC_5,       KC_6,       KC_0,       RESET,
@@ -64,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                             _______,  _______,    _______,             _______,   _______,    _______
   ),
 
-  [AR] = LAYOUT_REDOX(
+  [AR] = LAYOUT_redox(
       _______,      _______,      _______,      _______,    _______,  _______,    _______,             _______,   _______,    _______,    _______,    _______,    _______,    _______,
       _______,      _______,      _______,      _______,    _______,  _______,    _______,             _______,   _______,    _______,    KC_UP,      _______,    _______,    _______,
       _______,      _______,      _______,      _______,    _______,  _______,                                    _______,    KC_LEFT,    KC_DOWN,    KC_RIGHT,   _______,    _______,
@@ -76,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
 
-  [FU] = LAYOUT_REDOX(
+  [FU] = LAYOUT_redox(
       _______,      _______,      _______,      _______,    _______,  _______,    _______,             _______,   _______,    KC_F10,     KC_F11,     KC_F12,     _______,    _______,
       _______,      _______,      _______,      _______,    _______,  _______,    _______,             _______,   _______,    KC_F7,      KC_F8,      KC_F9,      _______,    _______,
       _______,      _______,      _______,      _______,    _______,  _______,                                    _______,    KC_F4,      KC_F5,      KC_F6,      _______,    _______,

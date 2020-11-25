@@ -147,6 +147,38 @@ typedef union {
 
 extern keyboard_config_t keyboard_config;
 
+
+#define LAYOUT_redox(                                                          \
+                                                                              \
+    k08,k09,k0A,k0B,k0C,k0D,k5D,               k50,k00,k01,k02,k03,k04,k05,   \
+    k18,k19,k1A,k1B,k1C,k1D,k5C,               k51,k10,k11,k12,k13,k14,k15,   \
+    k28,k29,k2A,k2B,k2C,k2D,                       k20,k21,k22,k23,k24,k25,   \
+    k38,k39,k3A,k3B,k3C,k3D,                       k30,k31,k32,k33,k34,k35,   \
+    k48,k49,k4A,k4B,                                       k42,k43,k44,k45,   \
+                            k5B,k5A,       k53,k52,                           \
+                        k4C,k58,k59,       k54,k55,k41)                       \
+                                                                              \
+                                                                              \
+                                                                              \
+   /* matrix positions */                           \
+   {                                                \
+    { k00, k10, k20, k30, KC_NO, k50 },             \
+    { k01, k11, k21, k31, k41, k51 },               \
+    { k02, k12, k22, k32, k42, k52 },               \
+    { k03, k13, k23, k33, k43, k53 },               \
+    { k04, k14, k24, k34, k44, k54 },               \
+    { k05, k15, k25, k35, k45, k55 },               \
+    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO },   \
+                                                    \
+    { KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO },   \
+    { k08, k18, k28, k38, k48, k58 },               \
+    { k09, k19, k29, k39, k49, k59 },               \
+    { k0A, k1A, k2A, k3A, k4A, k5A },               \
+    { k0B, k1B, k2B, k3B, k4B, k5B },               \
+    { k0C, k1C, k2C, k3C, k4C, k5C },               \
+    { k0D, k1D, k2D, k3D, KC_NO, k5D }              \
+   }
+
 /*
  *   LEFT HAND: LINES 115-122
  *  RIGHT HAND: LINES 124-131
